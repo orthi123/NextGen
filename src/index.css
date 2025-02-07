@@ -4,3 +4,11 @@
 .container {
   margin: auto;
 }
+@theme{
+  --font-primary_font: "Montserrat";
+  --color-primary_bg: #04040c;
+  --color-primary_text: #bc61f3;
+  --color-second_text: #f0f0f0;
+  --color-text_title: #f2f2f2;
+
+}
