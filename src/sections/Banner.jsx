@@ -1,5 +1,4 @@
 import Button from "../components/Button";
-
 import Container from "../components/Container";
 import Flex from "../components/Flex";
 import bannerImg from "../assets/images/banner.png";

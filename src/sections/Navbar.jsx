@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../components/Container";
 import Flex from "../components/Flex";
-import logo from "../assets/logo.png";
+import logo from ".././assets/images/logo.png"
 import Button from "../components/Button";
 import { NavLink } from "react-router";
 

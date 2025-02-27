@@ -16,17 +16,16 @@
   --color-primary_text: #bc61f3;
   --color-second_text: #f0f0f0;
   --color-text_title: #f2f2f2;
+  --breakpoint-MyXl:1920px;
 }
-.container {
+ .container{
   margin: auto;
-}
-
- @layer utilities {
-  .btnLinear {
+ }
+ @layer components {
+  .btnlinear {
     border: 5px solid transparent;
-    background: rgb(188, 97, 243);
     background: linear-gradient(
-      90deg,
+      0deg,
       rgba(188, 97, 243, 1) 0%,
       rgba(92, 67, 246, 1) 100%
     );
@@ -42,24 +41,13 @@
     );
     border-image-slice: 1;
   }
-  .banner-heading{
-    background-image: url("./assets/images/textBg.png");
+  .banner_heading {
+    background-image: url("./assets/textImag.png");
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  } 
+  }
 
-.banner-img-overlay{
-  /* background: rgb(255,255,255); */
-  background: linear-gradient(90deg, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); 
-}
-
-
-
-
-
-} 
-
-@layer components {
+ 
   .navItem {
     @apply relative text-xl font-medium font-primary_font text-second_text;
   }
