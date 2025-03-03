@@ -18,9 +18,20 @@
   --color-text_title: #f2f2f2;
   --breakpoint-MyXl:1920px;
 }
+
+html,body{
+  @apply bg-primary_bg font-primary_font text-second_text
+}
  .container{
   margin: auto;
  }
+ .slick-slide{
+padding:0px 25px;
+ }
+
+
+
+
  @layer components {
   .btnlinear {
     border: 5px solid transparent;

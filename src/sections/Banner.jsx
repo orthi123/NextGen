@@ -5,7 +5,7 @@ import bannerImg from "../assets/images/banner.png";
 
 const Banner = () => {
   return (
-    <section className="py-14">
+    <section className="py-14 relative z-50">
       <Container>
         <Flex className="items-center">
           <div className="max-w-[785px]">
@@ -17,9 +17,9 @@ const Banner = () => {
               congue sit. Risus, aliquam odio posuere ac in in nisl sed augue.
               Porta aenean egestas malesuada in pulvinar enim viverra.
             </p>
-            <Flex className="gap-4">
-              <Button text="Get started" />
-              <Button text="Create NFTs" bgShow={false} />
+            <Flex className="gap-[4px]">
+              <Button text={"Get started"} />
+              <Button text={"Create NFTs"} bgShow={false} />
             </Flex>
           </div>
           <Flex className="rounded-full max-w-[750px] max-h-[750px] overflow-hidden justify-center bg-[#8698DF] border-4 border-[#17152c] relative">
