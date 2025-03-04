@@ -36,6 +36,7 @@ appendDots:(dots) => (
           border: "1px blue solid"
         }}
       >
+        
         {i + 1}
       </div>
     ),
