@@ -3,9 +3,11 @@ import Title from "../components/Title"
 import Button from "../components/Button";
 import Flex from "../components/Flex";
 import TopCreatorContainer from "../components/top creator/TopCreatorContainer";
+import bgImage from "../assets/images/bg2.png";
 const TopCreators = () => {
   return (
     <section className="mt-8 relative z-50">
+        <img src={bgImage} alt="" className="absolute -top-[600px] right-0"/>
       <Container>
         <Flex className="flex-col">
           <Title title={"Top Crators"}/>

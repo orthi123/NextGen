@@ -42,7 +42,7 @@ appendDots:(dots) => (
     ),
   };
   return (
-    <section className="relative z-50">
+    <section className="relative">
       <Container>
          <Flex className="flex-col items-center">
           <Title title={"Collect some NFTs"} />
