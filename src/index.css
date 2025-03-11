@@ -29,9 +29,6 @@ html,body{
 padding:0px 25px;
  }
 
-
-
-
  @layer components {
   .btnlinear {
     border: 5px solid transparent;

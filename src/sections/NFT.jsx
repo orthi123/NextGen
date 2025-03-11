@@ -9,38 +9,72 @@ import Button from "../components/Button";
 import avatarImg from "../assets/images/avatar1.png"
 
 const NFT = () => {
-  const settings={
-     arrows: false,
-            dots: true,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 1,
+    const settings = {
+      arrows: false,
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      appendDots: (dots) => (
+        <div>
+          <Flex className="justify-center gap-x-1"> {dots} </Flex>
+        </div>
+      ),
+      customPaging: () => (
+        <div className="w-6 h-6 bg-[#595572] rounded-full"></div>
+      ),
+      // responsive: [
+      //   {
+      //     breakpoint: 767,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1,
+      //       initialSlide: 1,
+      //     },
+      //   },
+      //   {
+      //     breakpoint: 1920,
+      //     settings: {
+      //       slidesToShow: 3,
+      //       slidesToScroll: 1,
+      //       initialSlide: 1,
+      //     },
+      //   },
+      // ],
+    };
+//   const settings={
+//      arrows: false,
+//             dots: true,
+//             infinite: true,
+//             speed: 500,
+//             slidesToShow: 3,
+//             slidesToScroll: 1,
 
-appendDots:(dots) => (
-      <div
-        style={{
-          backgroundColor: "#ddd",
-          borderRadius: "10px",
-          padding: "10px"
-        }}
-      >
-        <ul style={{ margin: "0px" }}> {dots} </ul>
-      </div>
-    ),
-    customPaging: (i)=> (
-      <div
-        style={{
-          width: "30px",
-          color: "blue",
-          border: "1px blue solid"
-        }}
-      >
+// appendDots:(dots) => (
+//       <div
+//         // style={{
+//         //   backgroundColor: "#ddd",
+//         //   borderRadius: "10px",
+//         //   padding: "10px"
+//         // }}
+//       >
+//         <ul style={{ margin: "0px" }}> {dots} </ul>
+//       </div>
+//     ),
+//     customPaging: (i)=> (
+//       <div
+//         style={{
+//           width: "30px",
+//           color: "blue",
+//           border: "1px blue solid"
+//         }}
+//       >
         
-        {i + 1}
-      </div>
-    ),
-  };
+//         {i + 1}
+//       </div>
+//     ),
+//   };
   return (
     <section className="relative">
       <Container>

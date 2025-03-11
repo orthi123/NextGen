@@ -81,9 +81,9 @@ links:[
 ];
 const Footer = () => {
   return (
-    <footer className="mt-[200px]">
+    <footer className="mt-[200px] py-10 list-none">
       <Container>
-        <Flex>
+        <Flex className="justify-between items-start  gap-8">
           <div className="w-[400px]">
             <img src={logo} />
             <p className="text-lg">
@@ -93,11 +93,11 @@ const Footer = () => {
             <SocialMedia/>
           </div>
           <div>
-          <Flex>
+          <Flex className>
             {
               footerData.map((item)=>(
-                       <div key={item.heading}>
-                        <h2>
+                       <div key={item.heading} className="mr-15">
+                        <h2 className="font-extrabold">
                           {item.heading}
                         </h2>
                         {
